@@ -277,3 +277,90 @@ system("cls");
 	  }system("cls");
  }while(opcionEntradaPrincipal != 1 && opcionEntradaPrincipal != 2 && opcionEntradaPrincipal != 3);
  }
+if (opcionEntrada==2) {
+ 	
+ 	 cout<<"\n "<<jugador<<": vaya vaya, y aqui tenemos 3 puertas.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 do{
+	  
+	 cout<<"\n "<<jugador<<": Que ruta tomare?		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 cout<<"\n 1. Puerta con estrella"<<endl;
+ 	 cout<<"\n 2. Puerta con circulo"<<endl;
+ 	 cout<<"\n 3. Puerta con cuadrado"<<endl;
+ 	 cout<<"\n Selecciona la opcion que quieras realizar [Ingresa la opcion con valor numerico ejemplo: (3)]"<<endl;
+ 	 cin>>opcionEntradaPrincipal;
+ 	 switch(opcionEntradaPrincipal){
+ 	 	while(1){
+ 	 	case 1:
+ 	 		system("cls");
+			cout<<" Encontraste 30 dolares y 5 tesoros"<<endl;
+			dinero+=30;
+			tesoros+=5;
+ 	 		cout<<"\n "<<jugador<<": Esta ya es otra cosa.\n\n Veamos que mas hay por ahi.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 		cout<<"\n Presione enter para avanzar"<<endl;
+			  getch();
+ 	 		break;
+ 	 	case 2:
+ 	 		system("cls");
+ 	 		cout<<" Encontraste 10 dolares y 1 tesoro"<<endl;
+ 	 		dinero+=10;
+ 	 		tesoros+=1;
+ 	 		cout<<"\n "<<jugador<<": Bueno puedo haber sido peor, veamos si hay algo mas por aqui.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 		cout<<"\n Presione enter para avanzar"<<endl;
+			  getch();
+ 	 		break;
+ 	 	case 3:
+ 	 		system("cls");
+ 	 		cout<<" Perdiste 30 dolares."<<endl;
+ 	 		dinero-=30;
+ 	 		cout<<"\n "<<jugador<<": Venga ya!!		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 		cout<<"\n Presione enter para avanzar"<<endl;
+			  getch();
+ 	 		break;
+ 	 	default:
+ 	 		system("cls");
+ 			cout<<" La opcion es invalida, vuelve a elegir una opcion valida."<<endl;
+ 			cout<<"\n Presione enter para regresar a la decision.";
+			 getch();//Funcion que pausa el programa hasta que una tecla sea presionada.2
+ 			break;
+		  }
+	  }system("cls");
+ }while(opcionEntradaPrincipal != 1 && opcionEntradaPrincipal != 2 && opcionEntradaPrincipal != 3);
+}
+ if (opcionEntrada==3) {
+ 	do{
+	 
+ 	 cout<<"\n "<<jugador<<": Buscare informacion sobre las entradas de las minas.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 cout<<"\n "<<jugador<<": Hola dusculpa tu sabes algo acerca sobre la mina?		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 cout<<"\n "<<ainoa<<": Claro que necesitas saber?"<<endl;
+ 	 cout<<"\n "<<jugador<<": Que entrada es mejor?		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 cout<<"\n "<<ainoa<<": Esa informacion vale 20 dolares."<<endl;
+ 	 cout<<"\n 1. Pagar 20 dolares"<<endl;
+ 	 cout<<"\n 2. no pagar nada."<<endl;
+ 	 cout<<"\n Selecciona la opcion que quieras realizar [Ingresa la opcion con valor numerico ejemplo: (3)]"<<endl;
+	 cin>>opcionInfoEntrada;
+ 	 switch(opcionInfoEntrada){
+ 	 	while(1){
+ 	 	case 1:
+ 	 		system("cls");
+ 	 		cout<<" Has pagado 20 dolares"<<endl;
+ 	 		dinero-=20;
+			cout<<"\n "<<ainoa<<": La mejor entrada es la principal ya que no hay tantas trampas pero no quiere decir que no haya"<<endl;
+ 	 		cout<<"\n "<<jugador<<": Vale, muchas gracias		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 		cout<<"\n Presione enter para avanzar"<<endl;
+			  getch();
+ 	 		break;
+ 	 	case 2:
+ 	 		system("cls");
+ 	 		cout<<"\n "<<ainoa<<": Lo siento asi no te puedo ayudarte."<<endl;
+ 	 		cout<<"\n "<<jugador<<": Pues ya que.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 		cout<<"\n Presione enter para avanzar"<<endl;
+			  getch();
+ 	 		break;
+ 	 	default:
+ 	 		system("cls");
+ 			cout<<" La opcion es invalida, vuelve a elegir una opcion valida."<<endl;
+ 			cout<<"\n Presione enter para regresar a la decision.";
+			 getch();//Funcion que pausa el programa hasta que una tecla sea presionada.2
+ 			break;
+		  }
+	  }system("cls");
