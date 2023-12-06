@@ -100,3 +100,80 @@ switch(opcion){
 	     getch();
 		 break;
 }
+
+}while( opcion !=1);
+ system("cls");
+ cout<<" Introduce tu nombre: "<<endl;
+ cin>>jugador;
+ system("cls");
+ cout<<" Recientemente se ha descubierto una mina abandonada hace mucho tiempo"<<endl;
+ cout<<"\n Por lo que el aventurero "<<jugador<<" ira a descubrir los tesoros"<<endl;
+ cout<<"\n que se dicen hay ahi, sin embargo tambien cuenta con una gran cantidad"<<endl;
+ cout<<"\n de PELIGROS"<<endl;
+ cout<<"\n Presione enter para avanzar"<<endl;
+ getch();
+ system("cls");
+ cout<<"\n "<<jugador<<": Hey que han descubierto hoy?		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ cout<<"\n "<<anna<<": Algo que te encantara oir."<<endl;
+ cout<<"\n "<<youssef<<": Asi es, esto podria ser lo mejor que podriamos decirte."<<endl;
+ cout<<"\n Presione enter para avanzar"<<endl;
+ getch();
+ cout<<"\n "<<jugador<<": Venga digan que es lo tan importante que me tienen que decir.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ cout<<"\n "<<anna<<": Lo importante es que recientemente se encontro una mina abandonada en Egipto\n\n que segun lo que hemos investigado alberga un gran tesoro"<<endl;
+ cout<<"\n "<<youssef<<":S in embargo dicen que hay una gran cantidad de peligros ahi que protegen el tesoro."<<endl;
+ cout<<"\n Presione enter para avanzar"<<endl;
+ getch();
+ cout<<"\n "<<jugador<<": Pues tendre que ir a por ese tesoro, y tranquilo no hay peligro que haya derrotado a "<<jugador<<"		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ cout<<"\n Presione enter para avanzar"<<endl;
+ getch();
+ system("cls");
+ cout<<" Y asi despues de tres dias de un largo viaje "<<jugador<<" llego a Egipto"<<endl;
+ cout<<"\n "<<jugador<<": Vaya si que esta lejos este lugar.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ cout<<"\n "<<anna<<": Si pero valdra la pena venir hasta aca."<<endl;
+ cout<<"\n Presione enter para avanzar"<<endl;
+ getch();
+ cout<<"\n "<<jugador<<": Venga hay que apurarnos si no nunca lo encontraremos.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ cout<<"\n "<<anna<<": Mira ahi esta la mina, vamos alla."<<endl;
+ cout<<"\n Presione enter para avanzar"<<endl;
+ getch();
+ system("cls");
+ do{
+ 
+ cout<<"\n "<<anna<<": Yo no podre entrar pero estare afuera esperandote."<<endl;
+ cout<<"\n "<<jugador<<": Vale vale, yo me encargo.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ cout<<"\n Por donde entraras a la mina"<<endl;
+ cout<<"\n 1. Entrar por la cueva a un costado de la mina."<<endl;
+ cout<<"\n 2. Entrar por la entrada principal."<<endl;
+ cout<<"\n 3. Investigar acerca de las entradas."<<endl;
+ cout<<"\n Selecciona la opcion que quieras realizar [Ingresa la opcion con valor numerico ejemplo: (3)]"<<endl;
+ cin>>opcionEntrada;
+
+ 	switch(opcionEntrada){
+ 		while(1){
+ 		case 1:
+ 			system("cls");
+ 			cout<<"\n "<<jugador<<": Vaya esto esta lleno de telaranhas.\n\n Hey hay algo por ahi		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 			cout<<"\n Presione enter para avanzar"<<endl;
+			 getch();
+ 			break;
+ 		case 2:
+ 			system("cls");
+ 			cout<<"\n "<<jugador<<": Vaya eso fue facil. Sigamos avanzando.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 			cout<<"\n Presione enter para avanzar"<<endl;
+			 getch();
+ 			break;
+ 		case 3:
+ 			system("cls");
+ 			cout<<"\n "<<jugador<<": Creo que lo mejor sera recaudar informacion sobre las entradas.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 			cout<<"\n Presione enter para avanzar"<<endl;
+			 getch();
+ 			break;
+ 		default:
+ 			system("cls");
+ 			cout<<"La opcion es invalida, vuelve a elegir una opcion valida."<<endl;
+ 			cout<<"\n Presione enter para regresar a la decision.";
+			 getch();//Funcion que pausa el programa hasta que una tecla sea presionada.2
+ 			break;
+ }
+system("cls");
+ }
