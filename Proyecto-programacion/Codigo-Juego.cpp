@@ -665,3 +665,104 @@ system("cls");
  		 break;
 		
  }
+} while(opcionLadron != 1 && opcionLadron != 2 && opcionLadron != 3);
+if(opcionLadron==3){
+	cout<<"\n "<<jugador<<": Vaya y aqui tenemos 3 pasillos.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+	do{
+	cout<<"\n "<<jugador<<": Que ruta tomare?		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+	cout<<"\n 1. Primer pasillo"<<endl;
+	cout<<"\n 2. Segundo pasillo"<<endl;
+	cout<<"\n 3. Tercer pasillo"<<endl;
+	cout<<"\n Selecciona la opcion que quieras realizar [Ingresa la opcion con valor numerico ejemplo: (3)]"<<endl;
+	cin>>opcionPasillos;
+	switch(opcionPasillos){
+		case 1:
+			system("cls");
+			cout<<" Habia trampas pero sobreviviste, perdiste la mitad de tus cosas."<<endl;
+			dinero = dinero / 2;
+			tesoros = tesoros / 2;
+			cout<<"\n"<<jugador<<": Uff casi no la cuento		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+			cout<<"\n Presione enter para avanzar"<<endl;
+			getch();
+			break;
+		case 2:
+			system("cls");
+			cout<<" Se cerro la puerta del pasillo y te aplasto"<<endl;
+			cout<<"\n Moriste."<<endl;
+			cout<<"\n Fin de la partida"<<endl;
+			cout<<"Presiona una tecla para regresar al menu"<<endl;
+			cout<<"\n Presione enter para avanzar"<<endl;
+			getch();
+			break;
+		case 3:
+			system("cls");
+			cout<<" Lograste llegar al tesoro sin problemas"<<endl;
+			cout<<"\n "<<jugador<<": Venga ya aqui esta el tesoro		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+			cout<<"\n Presione enter para avanzar"<<endl;
+			getch();
+		default:
+			system("cls");
+ 		 cout<<" La opcion es invalida, vuelve a elegir una opcion valida."<<endl;
+ 		 cout<<"\n Presione enter para regresar a la decision.";
+         getch();//Funcion que pausa el programa hasta que una tecla sea presionada.2
+ 		 break;
+			
+	}
+}while(opcionPasillos != 1 && opcionPasillos != 2 && opcionPasillos != 3);
+}
+}while(opcionPasillos==2);
+system("cls");
+cout<<" Lograste llegar al tesoro pero la mina se esta cayendo"<<endl;
+do{
+cout<<"\n Tienes que escapar rapido"<<endl;
+cout<<"\n 1. Escapar subiendo las escaleras."<<endl;
+cout<<"\n 2. Escapar por el pasillo."<<endl;
+cout<<"\n 3. Escapar por la cueva."<<endl;
+cout<<"\n Selecciona la opcion que quieras realizar [Ingresa la opcion con valor numerico ejemplo: (3)]"<<endl;
+cin>>opcionSalida;
+switch(opcionSalida){
+	case 1:
+		system("cls");
+		cout<<" Lograste escapar pero perdiste la mitad de tus cosas."<<endl;
+		dinero = dinero / 2;
+		tesoros = tesoros / 2;
+		cout<<"\n "<<jugador<<": Al menos sali vivo 		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+		cout<<"\n Presione enter para avanzar"<<endl;
+		getch();
+		break;
+	case 2:
+		system("cls");
+		cout<<" Lograste escapar con todas tus cosas."<<endl;
+		getch();
+		cout<<"\n Presione enter para avanzar"<<endl;
+		break;
+	case 3:
+		system("cls");
+		cout<<" Las araÃ±as estaban ahi y te impidieron escapar"<<endl;
+		cout<<"\n Moriste"<<endl;
+		cout<<"\n Fin de la partida"<<endl;
+		cout<<"\n Presiona enter para regresar al menu"<<endl;
+		getch();
+		break;
+	default:
+	    system("cls");
+ 		cout<<" La opcion es invalida, vuelve a elegir una opcion valida."<<endl;
+ 		cout<<"\n Presione enter para regresar a la decision.";
+        getch();//Funcion que pausa el programa hasta que una tecla sea presionada.2
+ 		break;
+}
+}while(opcionSalida != 1 && opcionSalida != 2 && opcionSalida != 3);
+}while(opcionSalida==3);
+system("cls");
+cout<<" Lograste salir vivo de la aventura en la mina"<<endl;
+cout<<"\n "<<anna<<":"<<jugador<<" lograste salir!!		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+cout<<"\n "<<jugador<<": Te lo dije, no hay aventura que no pueda hacer 		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+cout<<"\n Fin"<<endl;
+cout<<"\n Presione enter para avanzar"<<endl;
+getch();
+cout<<" Gracias por jugar el juego: The great adventure in the mine"<<endl;
+cout<<"\n Presiona una tecla para regresar al menu principal"<<endl;
+getch();
+}
+
+}
