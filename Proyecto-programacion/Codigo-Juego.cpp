@@ -445,3 +445,102 @@ if (opcionEntrada==2) {
  }
 system("cls");
  }
+}while(opcionInfoEntrada1 != 1 && opcionInfoEntrada1 != 2 );
+ }
+ if (opcionInfoEntrada1 ==1){
+ 	 cout<<"\n "<<jugador<<": Vaya vaya 2 escaleras, 1 hacia arriba, otra hacia abajo y el pasillo principal.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 do{
+	  
+	 cout<<"\n "<<jugador<<": Que ruta tomare?		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 cout<<"\n 1. Subir escaleras"<<endl;
+ 	 cout<<"\n 2. Bajar escaleras"<<endl;
+ 	 cout<<"\n 3. Ir por el pasillo principal"<<endl;
+ 	 cout<<"\n Selecciona la opcion que quieras realizar [Ingresa la opcion con valor numerico ejemplo: (3)]"<<endl;
+ 	 cin>>opcionCueva;
+ 	 switch(opcionCueva){
+ 	 	while(1){
+ 	 	case 1:
+ 	 		system("cls");
+			 cout<<" Encontraste 30 dolares y 5 tesoros"<<endl;
+			 dinero+=30;
+			 tesoros+=5;
+ 	 		cout<<"\n "<<jugador<<": Esta ya es otra cosa.\n\n Veamos que mas hay por ahi.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 		cout<<"\n Presione enter para avanzar"<<endl;
+			  getch();
+ 	 		break;
+ 	 	case 2:
+ 	 		system("cls");
+ 	 		cout<<" Encontraste un nido de araÃ±as"<<endl;
+ 	 		cout<<"\n"<<jugador<<": Que es esto!!		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 		cout<<"\n Al escapar perdiste 30 dolares"<<endl;
+ 	 		dinero-=30;
+ 	 		cout<<"\n "<<jugador<<": Al menos logre escapar 		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<jugador<<""<<endl;
+ 	 		cout<<"\n Presione enter para avanzar"<<endl;
+			  getch();
+ 	 		break;
+ 	 	case 3:
+ 	 		system("cls");
+ 	 		cout<<" Encontraste 10 dolares y 1 tesoro."<<endl;
+ 	 		dinero+=10;
+ 	 		tesoros+=1;
+ 	 		cout<<"\n "<<jugador<<": Bueno puedo haber sido peor, veamos si hay algo mas por aqui.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 		cout<<"\n Presione enter para avanzar"<<endl;
+			  getch();
+ 	 		break;
+ 	 	default:
+ 	 		system("cls");
+ 			cout<<" La opcion es invalida, vuelve a elegir una opcion valida."<<endl;
+ 			cout<<"\n Presione enter para regresar a la decision.";
+             getch();//Funcion que pausa el programa hasta que una tecla sea presionada.2
+ 			break;
+		  }
+	  }
+ }while(opcionCueva != 1 && opcionCueva != 2 && opcionCueva != 3);
+ }
+ if (opcionInfoEntrada1 ==2) {
+ 	
+ 	 cout<<"\n "<<jugador<<": vaya vaya, y aqui tenemos 3 puertas.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 do{
+	  
+	 cout<<"\n "<<jugador<<": Que ruta tomare?		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 cout<<"\n 1. Puerta con estrella"<<endl;
+ 	 cout<<"\n 2. Puerta con circulo"<<endl;
+ 	 cout<<"\n 3. Puerta con cuadrado"<<endl;
+ 	 cout<<"\n Selecciona la opcion que quieras realizar [Ingresa la opcion con valor numerico ejemplo: (3)]"<<endl;
+ 	 cin>>opcionInfoEntrada2;
+ 	 switch(opcionInfoEntrada2){
+ 	 	while(1){
+ 	 	case 1:
+ 	 		system("cls");
+			cout<<" Encontraste 30 dolares y 5 tesoros"<<endl;
+			dinero+=30;
+			tesoros+=5;
+ 	 		cout<<"\n "<<jugador<<": Esta ya es otra cosa.\n\n Veamos que mas hay por ahi.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 		cout<<"\n Presione enter para avanzar"<<endl;
+			  getch();
+ 	 		break;
+ 	 	case 2:
+ 	 		system("cls");
+ 	 		cout<<" Encontraste 10 dolares y 1 tesoro"<<endl;
+ 	 		dinero+=10;
+ 	 		tesoros+=1;
+ 	 		cout<<"\n "<<jugador<<": Bueno puedo haber sido peor, veamos si hay algo mas por aqui.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 		cout<<"\n Presione enter para avanzar"<<endl;
+			  getch();
+ 	 		break;
+ 	 	case 3:
+ 	 		system("cls");
+ 	 		cout<<" Perdiste 30 dolares."<<endl;
+ 	 		dinero-=30;
+ 	 		cout<<"\n "<<jugador<<": Venga ya!!		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 	 		cout<<"\n Presione enter para avanzar"<<endl;
+			  getch();
+ 	 		break;
+ 	 	default:
+ 	 		system("cls");
+ 			cout<<" La opcion es invalida, vuelve a elegir una opcion valida."<<endl;
+ 			cout<<"\n Presione enter para regresar a la decision.";
+             getch();//Funcion que pausa el programa hasta que una tecla sea presionada.2
+ 			break;
+		  }
+	  }system("cls");
