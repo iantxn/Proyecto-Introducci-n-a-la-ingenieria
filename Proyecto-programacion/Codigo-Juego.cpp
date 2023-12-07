@@ -544,3 +544,124 @@ system("cls");
  			break;
 		  }
 	  }system("cls");
+      }while(opcionInfoEntrada2 != 1 && opcionInfoEntrada2 != 2 && opcionInfoEntrada2 != 3);
+ }
+ while(dinero<=0){
+	cout<<" Se te acabo el dinero para seguir buscando"<<endl;
+	cout<<"\n Fin de la partida"<<endl;
+	cout<<"\n Presione enter para avanzar"<<endl;
+	getch();
+	return 0;
+}
+ system("cls");
+ cout<<" Despues de avanzar por la mina llegas a la zona de descanso de los trabajadores"<<endl;
+ cout<<"\n "<<jugador<<": Vaya si que este lugar es grande, espera hay varias cosas ahi		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ cout<<"\n Presione enter para avanzar"<<endl;
+ getch();
+ do{
+ cout<<"\n "<<jugador<<": Que deberia hacer?		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ cout<<"\n 1. Investigar las cajas"<<endl;
+ cout<<"\n 2. Investigar los casilleros"<<endl;
+ cout<<"\n 3. Seguir avanzando por la mina."<<endl;
+ cout<<"\n Selecciona la opcion que quieras realizar [Ingresa la opcion con valor numerico ejemplo: (3)]"<<endl;
+ cin>>opcionAreaTrabaja;
+ switch(opcionAreaTrabaja){
+ 	case 1:
+ 		system("cls");
+ 		cout<<" Encontraste 3 tesoros en las cajas"<<endl;
+ 		tesoros+=3;
+ 		cout<<"\n "<<jugador<<": Esto se vendera bien.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 		cout<<"\n Presione enter para avanzar"<<endl;
+		 getch();
+ 		break;
+ 	case 2:
+ 		system("cls");
+ 		cout<<" Encontraste 30 dolares"<<endl;
+ 		dinero+=30;
+ 		cout<<"\n "<<jugador<<": Esto servira mucho para seguiur buscando tesoros.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 		cout<<"\n Presione enter para avanzar"<<endl;
+		 getch();
+ 		break;
+ 	case 3:
+ 		system("cls");
+ 		cout<<" Decidiste mejor seguir tu camino"<<endl;
+ 		cout<<"\n "<<jugador<<": Sera mejor avanzar y encontrar ese tesoro.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 		cout<<"\n Presione enter para avanzar"<<endl;
+		 getch();
+ 		break;
+ 	default:
+ 		system("cls");
+ 		 cout<<" La opcion es invalida, vuelve a elegir una opcion valida."<<endl;
+ 		 cout<<"\n Presione enter para regresar a la decision.";
+         getch();//Funcion que pausa el programa hasta que una tecla sea presionada.2
+ 		 break;
+ 	}
+} while(opcionAreaTrabaja != 1 && opcionAreaTrabaja != 2 && opcionAreaTrabaja != 3);
+ system("cls");
+ cout<<" Despues de eso seguiste avanzando sin esperar que te fueras encontrar algo asi..."<<endl;
+ cout<<"\n "<<ladron<<": Quien anda ahi?"<<endl;
+ cout<<"\n "<<jugador<<": Quien eres tu?		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ cout<<"\n "<<ladron<<": Estoy aqui buscando tesoros y vaya veo que tienes algunos"<<endl;
+ cout<<"\n "<<jugador<<": Alejate de mi.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ do{
+ 
+ cout<<"\n "<<ladron<<": Te dare 2 opciones podemos hacerlo por las buenas o por las malas tu decides"<<endl;
+ cout<<"\n 1. Hacerlo por las malas (pelear)"<<endl;
+ cout<<"\n 2. Hacerlo por las buenas (darle la mitad de tus cosas)"<<endl;
+ cout<<"\n 3. Escapar"<<endl;
+ cout<<"\n Selecciona la opcion que quieras realizar [Ingresa la opcion con valor numerico ejemplo: (3)]"<<endl;
+ cin>>opcionLadron;
+ switch(opcionLadron){
+ 	case 1:
+ 		system("cls");
+ 		cout<<"\n "<<jugador<<": Pues entonces sera por las malas		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+ 		cout<<"\n "<<ladron<<": Tu lo pediste"<<endl;
+ 		cout<<"\n Comienza la pelea"<<endl;
+ 		cout<<"\n Presione enter para avanzar"<<endl;
+		 getch();
+ 		for(c=1; c<=1; c++){
+ 			num= 1 + rand()%(3-1);
+		 }
+		 if(num==1){
+		 	cout<<" Has derrotado al ladron"<<endl;
+		 	cout<<"\n "<<ladron<<": Como es posible esto?"<<endl;
+		 	cout<<"\n "<<jugador<<": Venga largate		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+		 	cout<<"\n Presione enter para avanzar"<<endl;
+			 getch();
+		 }else(num==2);{
+		 	cout<<" Has perdido"<<endl;
+		 	cout<<"\n "<<jugador<<": Como es posible esto?		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+		 	cout<<"\n "<<ladron<<": Jajaja, ahora dame tus cosas"<<endl;
+		 	cout<<"\n El ladron se llevo la mitad de tus cosas."<<endl;
+		 	dinero = dinero / 2;
+		 	tesoros = tesoros / 2;
+		 	cout<<"\n "<<jugador<<": Si que era fuerte 		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+		 	cout<<"\n Presione enter para avanzar"<<endl;
+			 getch();
+		 }
+		 break;
+	case 2:
+		system("cls");
+		cout<<"\n "<<jugador<<": Vale toma esto y dejame en paz.		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+		cout<<"\n "<<ladron<<": Un gusto hacer tratos contigo, jajaja."<<endl;
+		cout<<"\n El ladron se fue con la mitad de tus cosas"<<endl;
+		dinero= dinero/2;
+		tesoros= tesoros/2;
+		cout<<"\n "<<jugador<<": Ni modo sigamos. 		Objetos= dinero:"<<dinero<<"	tesoros:"<<tesoros<<""<<endl;
+		cout<<"\n Presione enter para avanzar"<<endl;
+		getch();
+		break;
+	case 3:
+		system("cls");
+		cout<<" Lograste escapar por lo que esto te llevo a otros pasillos"<<endl;
+		getch();
+		cout<<"\n Presione enter para avanzar"<<endl;
+		break;
+	default:
+		system("cls");
+ 		 cout<<" La opcion es invalida, vuelve a elegir una opcion valida."<<endl;
+ 		 cout<<"\n Presione enter para regresar a la decision.";
+         getch();//Funcion que pausa el programa hasta que una tecla sea presionada.2
+ 		 break;
+		
+ }
